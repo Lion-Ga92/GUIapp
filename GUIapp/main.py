@@ -52,7 +52,7 @@ def new_window():
     my_gui = GUIapp_pg2("Cut corn", "peel corn")
     my_gui.main_gui(window_2= tk.Tk())
 
-
+"""Testing"""
 
 
 window.mainloop()
