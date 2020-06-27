@@ -27,11 +27,27 @@ class GUIapp_pg2:
                               borderwidth=1, width=8)
         self.label_b.grid(row=1, column=0)
 
-        self.entry = tk.Entry(master=self.frame_c,relief=tk.GROOVE, borderwidth=1, width=20)
-        self.entry.grid(row=0, column=0)
+        self.str_check = tk.StringVar()
+        """string_total = "Today completed tasks: \n """
 
-        self.entry_b = tk.Entry(master=self.frame_c, relief=tk.GROOVE, borderwidth=1, width=20)
-        self.entry_b.grid(row=1, column=0)
+        def add_values():
+            print(self.str_check.get())
+
+        self.Checkbutton = tk.Checkbutton(master=self.frame_c, text="Check if complete", variable=self.str_check,
+                                          command=add_values, onvalue="hello", offvalue="bye")
+        self.Checkbutton.pack()
+
+
+
+
+
+
+        '''self.Checkbutton_b = tk.Entry(master=self.frame_c, relief=tk.GROOVE, borderwidth=1, width=20)
+        self.entry_b.grid(row=1, column=0)'''
         self.window_2.mainloop()
+
+
+
+
 
 
