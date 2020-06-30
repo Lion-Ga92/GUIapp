@@ -31,7 +31,8 @@ class GUIapp_pg2:
         """string_total = "Today completed tasks: \n """
 
         def add_values():
-            print(self.str_check.get())
+            if self.str_check.get() == "hello":
+                print("Hello Variable")
 
         self.Checkbutton = tk.Checkbutton(master=self.frame_c, text="Check if complete", variable=self.str_check,
                                           command=add_values, onvalue="hello", offvalue="bye")
