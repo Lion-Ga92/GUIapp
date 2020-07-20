@@ -50,7 +50,7 @@ button_b.grid(row=4, column=1)
 
 def new_window():
     my_gui = GUIapp_pg2("Cut corn", "peel corn")
-    my_gui.main_gui(window_2= tk.Tk())
+    my_gui.main_gui(window_2=tk.Toplevel())
 
 
 window.mainloop()
